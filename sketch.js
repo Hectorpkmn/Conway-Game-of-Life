@@ -37,4 +37,38 @@ function draw(){
       }
     }
   }
+
+  // creating another 2D Array for the next generation
+  let nextGen = twoDimArray(cols, rows);
+
+//  for (let i = 0; i < cols; i++){
+//    for (let j = 0; j < rows; j++){
+        //if (i == 0 || i == cols-1 || j == 0 || j == rows-1){} // avoiding edges to then give the same value as the next generation
+
+
+//      let slot = 0; // variable to go to position of neighbours
+//      slot += grid[i-1][j-1];
+//      slot += grid[i][j-1];
+//      slot += grid[i+1][j-1];
+//      slot += grid[i][j-1];
+//      slot += grid[i][j+1];
+//      slot += grid[i-1][j+1];
+//      slot += grid[i][j+1];
+//      slot += grid[i+1][j+1];
+
+
+//    }
+//  }
+
+// Need a way to count live neighbours
+// But first it is need a way to count how many neighbours actually have the current position
+// Also identify if the position is a edge
+
+// Then the state may actually be check to the game of life rules
+// let currentState;
+// if (currentState == 0 && aliveNeighbours == 3){nextGen[i][j]=1}
+// else if (currentState == 1 && aliveNeighbours < 2 || aliveNeighbours > 3){nextGen[i][j]=0}
+// All other states would be the current state
+
+//  grid = nextGen; //pass the values for the next run
 }
